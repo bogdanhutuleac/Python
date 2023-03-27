@@ -6,6 +6,7 @@ with open ("C:\\Users\\Bogdan Madalina\\Desktop\\Python\\Advent\\day5\\input_dat
     line_of_interest = []
     for line in input_data:
         new_line = (line.rstrip("\n"))
+        #will pick up only the numbers from lines
         new_data = [int(s) for s in re.findall(r'\b\d+\b', new_line)]
         line_of_interest.append(new_data)
 
